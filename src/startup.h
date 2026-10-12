@@ -1,0 +1,19 @@
+#pragma once
+
+#include <filesystem>
+
+namespace jits {
+
+////////////////////////////////////////////////////////////
+/// \brief path of the static base map file inside the data folder
+///
+////////////////////////////////////////////////////////////
+std::filesystem::path baseMapPath(const std::filesystem::path& dataFolder);
+
+////////////////////////////////////////////////////////////
+/// \brief true when the base map file exists in the data folder
+///
+////////////////////////////////////////////////////////////
+bool baseMapExists(const std::filesystem::path& dataFolder);
+
+} // namespace jits
